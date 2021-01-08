@@ -8,6 +8,7 @@
 
 module.exports = function (/* ctx */) {
   return {
+		publicPath: process.env.NODE_ENV === "production" ? "/kabala-invasionhub.io.git/" : "/",
     // https://quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
 
